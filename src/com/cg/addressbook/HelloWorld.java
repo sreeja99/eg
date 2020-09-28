@@ -1,11 +1,21 @@
 package com.cg.addressbook;
 
+import java.util.Scanner;
+
 public class HelloWorld {
 
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		System.out.println("Welcome");
+	
+		private static final Scanner SC = new Scanner(System.in);
+
+		public final strictfp static void main(String[] args) {
+
+			System.out.println("Enter First Name: ");
+			String firstName = SC.next();
+			System.out.println("Enter Last Name: ");
+			String lastName = SC.next();
+
+			System.out.println("Welcome, " + firstName + "  " + lastName);
+		}
 
 	}
 
-}
